@@ -1,0 +1,15 @@
+#videoBaile{
+    position: relative;
+    left: 25%;
+    width:700px;
+    height:400px;  
+}
+
+@media screen and (max-width: 576px) {
+    #videoBaile{
+        position: relative;
+        left: 10%;
+        width:300px;
+        height:150px;  
+    }
+    } 

@@ -1,0 +1,125 @@
+
+
+
+/*-------------------------------------------STAFF------------------------------------------*/
+	
+.work {
+  float:left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+  width: 25%; 
+  display: table;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+  text-decoration:none;
+
+}
+@media screen and (max-width: 400px) {
+  .work {
+    height: 400px;
+    width: 50%;
+    right: 23%; 
+    }
+    
+
+
+}
+@media screen and (max-width: 710px) {
+  .work {
+    height: 330px;
+    width: 50%; 
+    text-decoration:none;
+  }
+
+
+}
+.work .desc {
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  
+}
+.work .desc h3 {
+  font-size: 22px;
+  color:black;
+}
+.work .desc p {
+  font-size: 16px;
+  color:black;
+}
+
+@media screen and (max-width: 500px) {
+  .work .desc {
+    opacity: 1;
+    background: transparent !important;
+  }
+  .work .desc h3 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color:yellow;
+  }
+  .work .desc span {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.work:hover .desc {
+  opacity: 1;
+}
+.work:hover .desc h3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.work:hover .desc span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+.js .animate-box {
+  opacity: 0;
+}
+	#fh5co-about,
+#fh5co-services,
+#fh5co-contact,
+#fh5co-work,
+#fh5co-blog,
+#fh5co-counter,
+#fh5co-footer {
+  padding: 6em 3em;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-about,
+  #fh5co-services,
+  #fh5co-contact,
+  #fh5co-work,
+  #fh5co-blog,
+  #fh5co-counter,
+  #fh5co-footer {
+    padding: 3em 1em;
+  }
+}
+
+.row-pb-md {
+  padding-bottom: 4em !important;
+}
+
+.row-pb-sm {
+  padding-bottom: 2em !important;
+}
+
+
+
