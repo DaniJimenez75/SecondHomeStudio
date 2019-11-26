@@ -2,13 +2,43 @@
 
 
 /*-------------------------------------------------PRECIOS------------------------------------------*/
+
 .contenedor p b{
     position: relative;
     font-size: 30px;
     color: purple;
     width: 100%;
-    left: 20%;
+    left: 25%;
 }
+
+@media screen and (max-width: 780px) { 
+.contenedor #PreciosHorario{
+    position: relative;
+	font-family:BigShouldersDisplay;
+    font-size: 50px;
+    left:5%;
+}
+}
+
+@media screen and (max-width: 760px) { 
+    .contenedor p b{
+        position: relative;
+        font-size: 20px;
+        color: purple;
+        width: 100%;
+        left: 20%;
+    }
+    }
+
+    @media screen and (max-width: 1200px) { 
+        .contenedor p b{
+            position: relative;
+            font-size: 25px;
+            color: purple;
+            width: 100%;
+            left: 5%;
+        }
+        }
 
 #pricing-table {
 	position: relative;
@@ -30,6 +60,25 @@
     float: left;
     position: relative;
 }
+
+@media screen and (max-width: 767px) { 
+    #pricing-table .plan {  
+        position: relative;
+        float:none;
+        width: 200px;
+        left:5%;
+        
+    }
+}
+@media screen and (min-width: 768px) { 
+    #pricing-table .plan {  
+        position: relative;
+        float:left;
+        width: 200px;
+        left:-5%;
+    }
+}
+
 
 #pricing-table #most-popular {
     z-index: 2;

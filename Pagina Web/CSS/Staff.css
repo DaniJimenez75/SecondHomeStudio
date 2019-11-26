@@ -14,16 +14,16 @@
   display: table;
   overflow: hidden;
   margin-bottom: 30px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 80px;
+  margin-left: 80px;
   text-decoration:none;
 
 }
 @media screen and (max-width: 400px) {
   .work {
     height: 400px;
-    width: 50%;
-    right: 23%; 
+    width: 100%;
+    right: 10%; 
     }
     
 
@@ -32,7 +32,7 @@
 @media screen and (max-width: 710px) {
   .work {
     height: 330px;
-    width: 50%; 
+    width: 75%; 
     text-decoration:none;
   }
 
@@ -53,9 +53,21 @@
   font-size: 22px;
   color:black;
 }
+
 .work .desc p {
-  font-size: 16px;
+  position: relative;
+  left:1%;
+  font-size: 12px;
   color:black;
+  
+}
+@media screen and (max-width: 500px) {
+
+.work .desc p {
+  font-size: none;
+  color:none;
+  display:none;
+}
 }
 
 @media screen and (max-width: 500px) {
