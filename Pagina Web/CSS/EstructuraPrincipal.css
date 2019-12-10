@@ -21,8 +21,9 @@ body{
 }
 }
 
-  .boton_personalizado{
-  	position: relative;
+  .boton_login{
+	  position: relative;
+	  
   	top: 30px;
   	left: 82%;
 	text-decoration: none;
@@ -34,10 +35,31 @@ body{
     border-radius: 6px;
     border: 2px solid white;
   }
-  .boton_personalizado:hover{
+  .boton_login:hover{
     color: #1883ba;
     background-color: #ffffff;
   }
+
+ 
+
+@media screen and (max-width: 640px) {
+	.boton_login{
+		top: 120px;
+		left:35%;
+		width:10%;
+		font-size:12px;
+	}
+	
+}
+
+@media screen and (min-width: 640px) and (max-width: 1100px) {
+	.boton_login{
+		left:75%;
+		font-size:12px;
+	}
+	
+}
+
 
 .imagensecond{
 	position: absolute;
@@ -47,7 +69,7 @@ body{
 	  left: 50px;
 	  
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
 	.imagensecond{
 		position: absolute;
 		  width: 100px;
@@ -71,7 +93,7 @@ body{
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
 #TITULOPAGINA{
 	position: relative;
 	width: 100%;
@@ -498,26 +520,5 @@ header nav li a {
 		left: 13%;
 	}
 }
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-    
-
-
 
 

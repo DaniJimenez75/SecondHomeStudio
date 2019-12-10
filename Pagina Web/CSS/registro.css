@@ -1,0 +1,22 @@
+
+.contenedorRegistro{
+		top:50px;
+	left: 70px;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+}
+
+.contenedorRegistro #tituloRegistro{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 80px;
+	left: 35%;
+}
+.formulario{
+	top:2px;
+	left: 20%;
+	position: relative;
+	z-index: 0;
+	width: 100%;
+}
