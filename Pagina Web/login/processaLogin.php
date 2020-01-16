@@ -10,6 +10,8 @@ function comprova_usuari($username, $password) {
   else return false;  
 }
 
+
+
 if(isset($_POST['username']) && isset($_POST['password'])) { 	// Han enviat dades via POST
     $usuari = $_POST['username'];
     $password = $_POST['password'];
