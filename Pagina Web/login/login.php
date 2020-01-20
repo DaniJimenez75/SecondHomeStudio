@@ -25,7 +25,7 @@
 <div class = "contenedorRegistro">
 <h1 id = "tituloRegistro">LOGIN</h1>
 <div class = "formulario">
-  <form name="login" method="post" action="processaLogin.php">
+<form action="processaLogin.php" method ="POST">
   <span>USERNAME:          </span><input type="text" name="username">
   <br>
   <br>

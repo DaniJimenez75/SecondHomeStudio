@@ -99,7 +99,7 @@ if (!empty($apellidos)) {
 if (!empty($telefono)) {
 	$numeroCaracteres = strlen($telefono);
 	if($numeroCaracteres > 20) {
-		echo "Los apellidos son demasiado largos";
+		echo "El telefono es demasiado largo";
 		$error = true;
 	} 
 } else if(isset($telefono)) {

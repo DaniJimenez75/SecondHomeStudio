@@ -1,36 +1,35 @@
 <?php
+if(isset($_POST['username']) && isset($_POST['password'])) {
+$username=$_POST['username'];
+$password = md5($_POST['password']);
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "secondhome";
+
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname); 
+
+$result = mysqli_query($conn, "SELECT * FROM usuarios WHERE username = '$username'");
+			
+      $row = mysqli_fetch_assoc($result);
 
 
-function comprova_usuari($username, $password) {
-  $claus = array ('dajife'=>"dajife00", 
-    'alargo'=>"alargo00",
-    'ruth'=>"ruth00",
-    'david'=>"david00");
-  if(isset($claus[$username]) && $claus[$username]==$password) return true;
-  else return false;  
-}
+			
 
+			if ($password == $row['password']) {
 
-
-if(isset($_POST['username']) && isset($_POST['password'])) { 	// Han enviat dades via POST
-    $usuari = $_POST['username'];
-    $password = $_POST['password'];
-    
-    if(comprova_usuari($usuari,$password)) {    // i dades són correctes
-        
-        session_start();
-        // registrem el nom d'usuari a la sessió
-        $_SESSION['username'] = $usuari;               
-        // carreguem aplicació
+       session_start();
+        $_SESSION['username'] = $username;               
         header('Location: inicio.php');
-        
-        
-    } else {   // Username/Password incorrectes
-       header('Location: login.php?error=1');
-    }
-   
-} else {     // 'Dades no enviades
-    header('Location: login.php?error=2');
-}
+      } else {   // Username/Password incorrectes
+        header('Location: login.php?error=1');
+     }
+    
+ } else {     // 'Dades no enviades
+     header('Location: login.php?error=2');
+ }
+  
 
+		
 ?>

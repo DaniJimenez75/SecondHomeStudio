@@ -27,6 +27,15 @@ class Usuaris {
 	
         return $res;
    }
+   public function getPassword($username) {
+	$sql="select password from usuarios where username=:username";  
+        $ordre = $this->bd->prepare($sql);	 
+        $ordre->bindValue(':username',$username);  
+        $ordre->execute();   
+        $res = $ordre->fetch(PDO::FETCH_ASSOC);
+	
+        return $res;
+   }
    public function getTelefono($telefono) {
 	$sql="select * from usuarios where telefono=:telefono";  
         $ordre = $this->bd->prepare($sql);	 
