@@ -72,6 +72,84 @@ class Usuaris {
 
     }
 
+    public function actualitzar($usernameNuevo,$username,$nombre,$apellidos,$telefono,$correo,$password) {
+		$sql ="update usuarios set username=:usernameNuevo,nombre=:nombre, apellidos=:apellidos, telefono=:telefono, correo=:correo, password=:password 
+				 where username=:username";
+		$ordre = $this->bd->prepare($sql);	 
+		
+        $ordre->bindValue(':username',$username);
+        $ordre->bindValue(':nombre',$nombre);
+        $ordre->bindValue(':apellidos',$apellidos);
+        $ordre->bindValue(':telefono',$telefono);
+        $ordre->bindValue(':correo',$correo);
+        $ordre->bindValue(':password',md5($password));
+        $ordre->bindValue(':usernameNuevo',$usernameNuevo);
+		
+		$res = $ordre->execute(); 
+        return $res;
+
+    }
+
+    public function cambiarPremium($premium,$username) {
+		$sql ="update usuarios set premium=:premium where username=:username";
+		$ordre = $this->bd->prepare($sql);	 
+		
+        $ordre->bindValue(':username',$username);
+        $ordre->bindValue(':premium',$premium);
+
+		
+		$res = $ordre->execute(); 
+        return $res;
+
+    }
+
+    function update($usuaris) {  
+        global $missatge;     
+        $usernameNuevo=$_POST['usernameNuevo'];		
+        $username=$_POST['username'];
+        $nombre=$_POST['nombre'];
+        $apellidos = $_POST['apellidos'];
+        $telefono=$_POST['telefono'];
+        $correo=$_POST['correo'];
+        $password=$_POST['password'];
+        $res = $usuaris->actualitzar($usernameNuevo,$username,$nombre,$apellidos,$telefono,$correo,$password);
+           if($res) $missatge = "Actualització correcta";
+           else $missatge = "Actualització incorrecta";		
+      
+        }
+
+        
+  function cambiarAPremium($usuaris) {  
+	global $missatge;     	
+	$username=$_POST['username'];
+	$premium = 1;
+	$res = $usuaris->cambiarPremium($premium,$username);
+	   if($res) $missatge = "Actualització correcta";
+	   else $missatge = "Actualització incorrecta";		
+  
+	}
+	
+
+
+	  function cambiarANormal($usuaris) {  
+		global $missatge;     	
+		$username=$_POST['username'];	
+		$premium = 0;
+		$res = $usuaris->cambiarPremium($premium,$username);
+		   if($res) $missatge = "Actualització correcta";
+		   else $missatge = "Actualització incorrecta";		
+	  
+        }
+        
+
+public function borrar($username) {
+	$sql ="delete from usuarios where username=:username";
+		$ordre = $this->bd->prepare($sql);	 
+		$ordre->bindValue(':username',$username);		   
+	$res = $ordre->execute();
+		return $res;
+   }
+
 
 
 

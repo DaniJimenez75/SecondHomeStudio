@@ -33,6 +33,8 @@
   <br>
   <br>
   <input type="submit" value="Login" name="boton" id="boton">
+  <input type="button" value="Volver a la pagina" name="boton" id="botonVolver" onclick="location.href='../QueEsSecondHome.html'">
+
 
   </form>
   </div>
