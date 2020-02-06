@@ -35,21 +35,7 @@ $error = false;
 <!--NIF-->
 <span>USERNAME:          </span><input type="text" name="username">
 <?php
-if (!empty($username)) {
-	
-	  
-	  $numeroCaracteres = strlen($username);
-	if($numeroCaracteres > 20) {
-		echo "El username es demasiado largo";
-		$error = true;
-	} 
-}else if(isset($username)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
-if(isset($missatgeUsername)) {
-	print($missatgeUsername) ;
-}
+	include_once '../../registro/Validaciones/validarUsername.php';
 
 ?>
 <br>
@@ -59,17 +45,8 @@ if(isset($missatgeUsername)) {
 <!--Nombre-->
 <span>Nombre:          </span><input type="text" name="nombre">
 <?php
-if (!empty($nombre)) {
+	include_once '../../registro/Validaciones/validarNombre.php';
 
-	$numeroCaracteres = strlen($nombre);
-	if($numeroCaracteres > 20) {
-		echo "El nombre es demasiado largo";
-		$error = true;
-	} 
-}else if(isset($nombre)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
 ?>
 <br>
 <br>
@@ -78,16 +55,8 @@ if (!empty($nombre)) {
 <!--Apellidos-->
 <span>Apellidos:       </span><input type="text" name="apellidos">
 <?php
-if (!empty($apellidos)) {
-	$numeroCaracteres = strlen($apellidos);
-	if($numeroCaracteres > 50) {
-		echo "Los apellidos son demasiado largos";
-		$error = true;
-	} 
-}else if(isset($apellidos)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
+	include_once '../../registro/Validaciones/validarApellidos.php';
+
 ?>
 <br>
 <br>
@@ -96,20 +65,8 @@ if (!empty($apellidos)) {
 <!--Telefono-->
 <span>Telefono:        </span><input type="tel" name="telefono">
 <?php
-if (!empty($telefono)) {
-	$numeroCaracteres = strlen($telefono);
-	if($numeroCaracteres > 20) {
-		echo "El telefono es demasiado largo";
-		$error = true;
-	} 
-} else if(isset($telefono)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
+	include_once '../../registro/Validaciones/validarTelefono.php';
 
-if(isset($missatgeTelefono)) {
-	print($missatgeTelefono) ;
-}
 ?>
 <br>
 <br>
@@ -118,20 +75,8 @@ if(isset($missatgeTelefono)) {
 <!--Correo Electronico-->
 <span>Correo electronico:            </span><input type="email" name="correo">
 <?php
-if (!empty($correo)) {
-	$numeroCaracteres = strlen($correo);
-	if($numeroCaracteres > 50) {
-		echo "El correo es demasiado largo";
-		$error = true;
-	} 
-} else if(isset($correo)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
+	include_once '../../registro/Validaciones/validarCorreo.php';
 
-if(isset($missatgeCorreo)) {
-	print($missatgeCorreo) ;
-}
 ?>
 <br>
 <br>
@@ -140,45 +85,17 @@ if(isset($missatgeCorreo)) {
 <!--Contraseña-->
 <span>Contraseña            </span><input type="password" name="password">
 <?php
-if (!empty($password)) {
-	
-	$numeroCaracteres = strlen($password);
-	if($numeroCaracteres > 20) {
-		echo "La contraseña es demasiado larga";
-		$error = true;
-	} 
+	include_once '../../registro/Validaciones/validarContraseña.php';
 
-
-}else if(isset($password)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
 ?>
 <br>
 <br>
 <span>Confirmar Contraseña            </span><input type="password" name="passwordConfirm">
-
-
-<?php  
-
-if (!empty($password)) {
-	if(strcmp($password, $_POST['passwordConfirm'])==0) {
-	$numeroCaracteres = strlen($password);
-	if($numeroCaracteres > 20) {
-		echo "La contraseña es demasiado larga";
-		$error = true;
-	} 
-} else {
-	echo "Las contraseñas no coinciden";
-	$error = true;
-}
-
-}else if(isset($password)) {
-	echo "Este campo esta vacio";
-	$error = true;
-}
+<?php
+	include_once '../../registro/Validaciones/validarConfirmarContraseña.php';
 
 ?>
+
 
 <br>
 <br>

@@ -1,0 +1,12 @@
+.tablaUsuarios{
+    position: relative;
+    border: black 2px solid;
+    width: 20%;
+    left: 15%;
+}
+
+.tablaUsuarios td{
+    border: black 1px solid;
+    font-size:17px;
+ 
+}

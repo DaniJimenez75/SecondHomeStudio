@@ -27,6 +27,15 @@ class Usuaris {
 	
         return $res;
    }
+   public function getAll() {
+	$sql="select * from usuarios";  
+        $ordre = $this->bd->prepare($sql);	 
+        $ordre->execute();   
+        $res = $ordre->fetchAll(PDO::FETCH_ASSOC);
+	
+        return $res;
+   }
+
    public function getPassword($username) {
 	$sql="select password from usuarios where username=:username";  
         $ordre = $this->bd->prepare($sql);	 
@@ -90,19 +99,6 @@ class Usuaris {
 
     }
 
-    public function cambiarPremium($premium,$username) {
-		$sql ="update usuarios set premium=:premium where username=:username";
-		$ordre = $this->bd->prepare($sql);	 
-		
-        $ordre->bindValue(':username',$username);
-        $ordre->bindValue(':premium',$premium);
-
-		
-		$res = $ordre->execute(); 
-        return $res;
-
-    }
-
     function update($usuaris) {  
         global $missatge;     
         $usernameNuevo=$_POST['usernameNuevo'];		
@@ -117,6 +113,21 @@ class Usuaris {
            else $missatge = "Actualització incorrecta";		
       
         }
+
+    public function cambiarPremium($premium,$username) {
+		$sql ="update usuarios set premium=:premium where username=:username";
+		$ordre = $this->bd->prepare($sql);	 
+		
+        $ordre->bindValue(':username',$username);
+        $ordre->bindValue(':premium',$premium);
+
+		
+		$res = $ordre->execute(); 
+        return $res;
+
+    }
+
+    
 
         
   function cambiarAPremium($usuaris) {  
@@ -150,10 +161,71 @@ public function borrar($username) {
 		return $res;
    }
 
+   public function setUsername($username,$usernameAntiguo){
+    $sql ="update usuarios set username=:username where username=:usernameAntiguo";
+    $ordre = $this->bd->prepare($sql);	    
+    $ordre->bindValue(':username',$username);  
+    $ordre->bindValue(':usernameAntiguo',$usernameAntiguo);
+    $res = $ordre->execute(); 
+    return $res;
+   }
 
+   public function actualizarUsername($usuaris){
+       $username = $_POST['username'];
+       $usernameAntiguo = $_SESSION['username'];
+       $usuaris->setUsername($username,$usernameAntiguo);
 
+   }
 
+   public function setTelefono($telefono,$username){
+    $sql ="update usuarios set telefono=:telefono where username=:username";
+    $ordre = $this->bd->prepare($sql);	    
+    $ordre->bindValue(':username',$username);   
+    $ordre->bindValue(':telefono',$telefono);       
+    $res = $ordre->execute(); 
+    return $res;
+   }
 
+   public function actualizarTelefono($usuaris){
+       $username = $_SESSION['username'];
+       $telefono = $_POST['telefono'];
+       $usuaris->setTelefono($telefono,$username);
+
+   }
+
+   public function setCorreo($correo,$username){
+    $sql ="update usuarios set correo=:correo where username=:username";
+    $ordre = $this->bd->prepare($sql);	    
+    $ordre->bindValue(':username',$username);   
+    $ordre->bindValue(':correo',$correo);       
+    $res = $ordre->execute(); 
+    return $res;
+   }
+
+   public function actualizarCorreo($usuaris){
+       $username = $_SESSION['username'];
+       $correo = $_POST['correo'];
+       $usuaris->setCorreo($correo,$username);
+
+   }
+
+   public function setContraseña($password,$username){
+    $sql ="update usuarios set password=:password where username=:username";
+    $ordre = $this->bd->prepare($sql);	    
+    $ordre->bindValue(':username',$username);   
+    $ordre->bindValue(':password',md5($password));       
+    $res = $ordre->execute(); 
+    return $res;
+   }
+
+   public function actualizarContraseña($usuaris){
+       $username = $_SESSION['username'];
+       $password = $_POST['password'];
+       $usuaris->setContraseña($password,$username);
+
+   }
+
+  
 }
 
 ?>
