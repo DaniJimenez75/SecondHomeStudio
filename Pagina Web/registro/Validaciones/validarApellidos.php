@@ -1,4 +1,5 @@
 <?php
+include_once '../indexRegistro.php';
 if (!empty($apellidos)) {
 	$numeroCaracteres = strlen($apellidos);
 	if($numeroCaracteres > 50) {

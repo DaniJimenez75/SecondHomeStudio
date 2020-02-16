@@ -1,7 +1,7 @@
 .nou{
 	position: fixed;
-	top:150px;
-	right:200px;
+	top:380px;
+	right:20px;
 	background: orange;
 	width: 30%;
 	border:3px;
@@ -64,42 +64,8 @@
 	
 }
 
-
-
-
-
-@media screen and (max-width: 1550px) { 
-    .menuUsuarios ul{
-	list-style-type: none;
-	padding: 1em 1em auto;
-	background: black;
-	position: absolute;
-	left: 8%;
-	width: 70%;
-	z-index: 100;
-	text-align: center;
-}
-
-
-
-
-  }
-  @media screen and (max-width: 1370px) { 
-    .menuUsuarios ul{
-	list-style-type: none;
-	padding: 1em 1em auto;
-	background: black;
-	position: absolute;
-	left: 8%;
-	width: 80%;
-	z-index: 100;
-	text-align: center;
-	top:275px;
-}
-}
-
-@media screen and (max-width: 614px) { 
-    .menuUsuarios ul{
+@media screen and (max-width: 361px) { 
+    .menuUsuarios {
 	list-style-type: none;
 	padding: 2px 2px 1px;
 	background: black;
@@ -108,9 +74,173 @@
 	width: 76%;
 	z-index: 100;
 	text-align: center;
-	top: 300px;
+	top: 450px;
+}
+	.titulo{
+		top: 70px;
+		left: 15%;
+	}
+	.boton_login{
+		left: 25%;
+	}
+	#TITULOPAGINA{
+		left: -5%;
+		width: 100%;
+	}
 }
 
+@media screen and (min-width: 362px) and (max-width: 414px) { 
+    .menuUsuarios {
+	list-style-type: none;
+	padding: 2px 2px 1px;
+	background: black;
+	position: absolute;
+	left: 15%;
+	width: 76%;
+	z-index: 100;
+	text-align: center;
+	top: 500px;
+}
+	.titulo{
+		top: 100px;
+		left: 15%;
+	}
+	.boton_login{
+		left: 25%;
+	}
+	#TITULOPAGINA{
+		left: -5%;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 415px) and (max-width: 514px) { 
+    .menuUsuarios {
+	list-style-type: none;
+	padding: 2px 2px 1px;
+	background: black;
+	position: absolute;
+	left: 15%;
+	width: 76%;
+	z-index: 100;
+	text-align: center;
+	top: 480px;
+}
+	.titulo{
+	top: 70px;
+	left: 25%;
+	}
+	.boton_login{
+		left: 35%;
+	}
+	#TITULOPAGINA{
+		left: 5%;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 515px) and (max-width: 640px) { 
+    .menuUsuarios {
+	list-style-type: none;
+	padding: 2px 2px 1px;
+	background: black;
+	position: absolute;
+	left: 15%;
+	width: 76%;
+	z-index: 100;
+	text-align: center;
+	top: 450px;
+}
+	.titulo{
+	top: 70px;
+	left: 25%;
+	}
+	.boton_login{
+		left: 45%;
+	}
+	#TITULOPAGINA{
+		left: 10%;
+		width: 76%;
+	}
+}
+
+@media screen and (min-width: 641px) and (max-width: 833px) { 
+    .menuUsuarios {
+	list-style-type: none;
+	padding: 2px 2px 1px;
+	background: black;
+	position: absolute;
+	left: 15%;
+	width: 76%;
+	z-index: 100;
+	text-align: center;
+	top: 350px;
+}
+	.titulo{
+	top: -50px;
+	left: 20%;
+	width: 76%;
+	}
+	.boton_login{
+		left: 55%;
+	}
+	#TITULOPAGINA{
+		left: 15%;
+		width: 76%;
+	}
+}
+
+@media screen and (min-width: 834px) and (max-width: 1056px) { 
+    .menuUsuarios {
+	list-style-type: none;
+	padding: 2px 2px 1px;
+	background: black;
+	position: absolute;
+	left: 15%;
+	width: 76%;
+	z-index: 100;
+	text-align: center;
+	top: 250px;
+}
+	.titulo{
+	top: -50px;
+	left: 20%;
+	width: 76%;
+	}
+	.boton_login{
+		left: 70%;
+	}
+	#TITULOPAGINA{
+		left: 15%;
+		width: 76%;
+	}
+}
+
+@media screen and (min-width: 1057px) and (max-width: 1370px) { 
+    .menuUsuarios {
+	list-style-type: none;
+	padding: 2px 2px 1px;
+	background: black;
+	position: absolute;
+	left: 15%;
+	width: 76%;
+	z-index: 100;
+	text-align: center;
+	top: 250px;
+}
+	.titulo{
+	top: -50px;
+	left: 30%;
+	width: 76%;
+	}
+	.boton_login{
+		left: 70%;
+	}
+	#TITULOPAGINA{
+		left: 25%;
+		width: 76%;
+	}
+}
 
 .menuUsuarios li{
 	position: relative;
@@ -133,5 +263,69 @@
 	
 }
 
+.tablaVideos{
+    border:5px solid black;
+    position:relative;
+    width:100%;
+}
+
+.videoTutoriales{
+    width:500px;
+    height:300px;
+
+}
+
+@media screen and (max-width: 400px) { 
+    .tablaVideos td{
+
+    position:relative;
+    width:100%;
+}
+.videoTutoriales{
+    width:150px;
+    height:150px;
+
+}
+
+}
+
+@media screen and (min-width:400px) and (max-width: 700px) { 
+    .tablaVideos td{
+
+    position:relative;
+    width:100%;
+}
+.videoTutoriales{
+    width:200px;
+    height:150px;
+
+}
+
+}
+
+@media screen and (min-width:701px) and (max-width: 950px) { 
+    .tablaVideos td{
+
+    position:relative;
+    width:100%;
+}
+.videoTutoriales{
+    width:300px;
+    height:200px;
+
+}
+
+}
+@media screen and (min-width:951px) and (max-width: 1200px) { 
+    .tablaVideos td{
+
+    position:relative;
+    width:100%;
+}
+.videoTutoriales{
+    width:400px;
+    height:300px;
+
+}
 
 }

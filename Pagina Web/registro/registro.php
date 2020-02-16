@@ -1,5 +1,6 @@
 <?php
 include_once 'indexRegistro.php';
+include_once 'Usuaris.php';
 
 error_reporting(0);
 $username=$_POST['username'];
@@ -35,7 +36,7 @@ $error = false;
 <!--NIF-->
 <span>USERNAME:          </span><input type="text" name="username">
 <?php
-	include_once '../../registro/Validaciones/validarUsername.php';
+	include_once 'Validaciones/validarUsername.php';
 
 ?>
 <br>
@@ -45,7 +46,7 @@ $error = false;
 <!--Nombre-->
 <span>Nombre:          </span><input type="text" name="nombre">
 <?php
-	include_once '../../registro/Validaciones/validarNombre.php';
+	include_once 'Validaciones/validarNombre.php';
 
 ?>
 <br>
@@ -55,7 +56,7 @@ $error = false;
 <!--Apellidos-->
 <span>Apellidos:       </span><input type="text" name="apellidos">
 <?php
-	include_once '../../registro/Validaciones/validarApellidos.php';
+	include_once 'Validaciones/validarApellidos.php';
 
 ?>
 <br>
@@ -65,7 +66,7 @@ $error = false;
 <!--Telefono-->
 <span>Telefono:        </span><input type="tel" name="telefono">
 <?php
-	include_once '../../registro/Validaciones/validarTelefono.php';
+	include_once 'Validaciones/validarTelefono.php';
 
 ?>
 <br>
@@ -75,7 +76,7 @@ $error = false;
 <!--Correo Electronico-->
 <span>Correo electronico:            </span><input type="email" name="correo">
 <?php
-	include_once '../../registro/Validaciones/validarCorreo.php';
+	include_once 'Validaciones/validarCorreo.php';
 
 ?>
 <br>
@@ -85,14 +86,14 @@ $error = false;
 <!--Contraseña-->
 <span>Contraseña            </span><input type="password" name="password">
 <?php
-	include_once '../../registro/Validaciones/validarContraseña.php';
+	include_once 'Validaciones/validarContraseña.php';
 
 ?>
 <br>
 <br>
 <span>Confirmar Contraseña            </span><input type="password" name="passwordConfirm">
 <?php
-	include_once '../../registro/Validaciones/validarConfirmarContraseña.php';
+	include_once 'Validaciones/validarConfirmarContraseña.php';
 
 ?>
 
@@ -106,6 +107,5 @@ $error = false;
 </div>
 </body>
 </html>
-
 
 

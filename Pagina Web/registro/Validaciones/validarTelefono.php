@@ -1,4 +1,5 @@
 <?php
+include_once '../indexRegistro.php';
 if (!empty($telefono)) {
 	$numeroCaracteres = strlen($telefono);
 	if($numeroCaracteres > 20) {

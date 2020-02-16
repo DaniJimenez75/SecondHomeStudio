@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/PreciosHorarios.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Staff.css">
-	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/contacto.css">
+	
 	<link rel="shortcut icon" href="../Imagenes/logoo.ico" />
 	<title>SECOND HOME STUDIO</title>
 </head>
@@ -81,26 +83,26 @@
                             <strong>Telefono: 969 14 10 27</strong></p>
                             
                             <br/>
-                            
+                            <div class = "formulario">
                             <form action="pagina2.php" method="post" enctype="multipart/form-data">
                             <fieldset>
                                 <legend style="color: black">CONSULTAS</legend>
                             
-                        <p style="color: black"> Nombre* </p><br/>
+                        <p> Nombre* </p><br/>
                         <input type="text" name="nombre" size="20" maxlength="30" required /><br/>
                          
-                        <p style="color: black"> Apellidos* </p><br/>
-                        <input type="text" name="apellidos" size="50" maxlength="80" required / ><br/>
+                        <p> Apellidos* </p><br/>
+                        <input type="text" name="apellidos" size="35" maxlength="80" required / ><br/>
                          
-                        <p style="color: black">Telefono* </p><br/>
+                        <p>Telefono* </p><br/>
                         <input type="tel" name="telefono" maxlength="9" required><br/>
                         
-                        <p style="color: black">Email* </p><br/>
+                        <p>Email* </p><br/>
                         <input type="email" name="email" required><br/>
-                        <p style="color: black">Asunto </p><br/>
+                        <p>Asunto </p><br/>
                         <input type="asunto" name="asunto" required><br/>
                         
-                        <p style="color: black">Mensaje* </p><br/>
+                        <p>Mensaje* </p><br/>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" required ></textarea>
                          <br/>
                         <br/>
@@ -110,7 +112,7 @@
                         <input type="reset" name="borrar" value="Borrar datos" />
                         <input type="submit" name="enviar" value="Envia datos" />
                             
-                        
+                        </div>
                         </form>
                         <br/>
 </div>

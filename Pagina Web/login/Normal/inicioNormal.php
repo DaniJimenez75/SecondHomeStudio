@@ -1,5 +1,6 @@
 <?php
 include_once '../seguretat.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -32,13 +33,25 @@ include_once '../seguretat.php';
 <input type="button"  class="boton_personalizado" value="?" onclick="ajuda()"> </h1>
 	<header>
 	<nav>
-		<ul class = "menu">
-			<li><a> HIP HOP </a></li>
-			<li><a> TWERK </a></li>
-			<li><a> DANCEHALL </a>
-			<li><a> POPPING </a>  
-			<li><a> VOGUE </a></li>
-			<li><a>HOUSE & SHUFFLE</a>
+		<ul class = "menuUsuarios">
+		<?php
+		echo "<li><a href='inicioNormal.php?pagina=hiphopNormal'>
+					 HIP HOP</a></li>";
+					 
+		echo "<li><a href='inicioNormal.php?pagina=twerkNormal'>
+					 TWERK</a></li>";
+	    echo "<li><a href='inicioNormal.php?pagina=dancehallNormal'>
+					DANCEHALL</a></li>";
+	    echo "<li><a href='inicioNormal.php?pagina=poppingNormal'>
+					POPPING</a></li>";
+		echo "<li><a href='inicioNormal.php?pagina=waackingNormal'>
+					WAACKING & VOGUE</a></li>";
+		echo "<li><a href='inicioNormal.php?pagina=houseNormal'>
+					HOUSE & SHUFFLE</a></li>";
+					 
+					 
+					 ?>
+		
 							
 	</nav>
 </header>
@@ -60,7 +73,28 @@ Aqui encontraras unos videos de corta duracion de las clases, para ver el video 
 </script>
 
 
-
+<?php
+if(isset($_GET['pagina'])){
+	if(strcmp($_GET['pagina'], 'hiphopNormal')==0){
+		include_once 'Paginas/HipHopNormal.php';
+	}
+	if(strcmp($_GET['pagina'], 'twerkNormal')==0){
+		include_once 'Paginas/twerkNormal.php';
+	}
+	if(strcmp($_GET['pagina'], 'dancehallNormal')==0){
+		include_once 'Paginas/dancehallNormal.php';
+	}
+	if(strcmp($_GET['pagina'], 'poppingNormal')==0){
+		include_once 'Paginas/poppingNormal.php';
+	}
+	if(strcmp($_GET['pagina'], 'waackingNormal')==0){
+		include_once 'Paginas/waackingNormal.php';
+	}
+	if(strcmp($_GET['pagina'], 'houseNormal')==0){
+		include_once 'Paginas/houseNormal.php';
+	}
+}
+?>
 
 </body>
 </html>

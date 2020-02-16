@@ -1,6 +1,6 @@
 
 <?php  
-
+include_once '../indexRegistro.php';
 if (!empty($password)) {
 	if(strcmp($password, $_POST['passwordConfirm'])==0) {
 	$numeroCaracteres = strlen($password);

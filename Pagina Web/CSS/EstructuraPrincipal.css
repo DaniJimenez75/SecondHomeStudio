@@ -87,7 +87,6 @@ body{
 }
 
 
-
 @media screen and (max-width: 640px) {
 #TITULOPAGINA{
 	position: relative;
@@ -182,7 +181,7 @@ header nav ul{
 	width: 76%;
 	z-index: 100;
 	text-align: center;
-	top: 300px;
+	top:325px;
 }
 
 
@@ -426,10 +425,11 @@ header nav li a {
 /*CONTENIDO DE LA PAGINA ALMACENADO EN CONTENEDOR */
 .contenedor{
 	top:330px;
-	left: 70px;
+	left: 10%;
 	position: relative;
 	z-index: 0;
-	width: 100%;
+	width: 75%;
+	
 }
 @media screen and (max-width: 576px) { 
 	.contenedor{
@@ -499,7 +499,16 @@ header nav li a {
 	position: relative;
 	font-family:BigShouldersDisplay;
 	font-size: 80px;
-	left: 35%;
+	
+	top: -50px;
+	text-align: center;
+}
+
+@media screen and (max-width: 576px) { 
+	.contenedor #clase{
+	top:0px;
+	left: 16%;
+	}
 }
 .contenedorUsuarios #usuarios{
 	position: relative;
@@ -531,5 +540,41 @@ header nav li a {
 		left: 13%;
 	}
 }
+
+.contenedorUsuarios{
+	top:200px;
+	left: 10%;
+	position: relative;
+	z-index: 0;
+	width: 75%;
+	
+}
+@media screen and (max-width: 576px) { 
+	.contenedorUsuarios{
+		top:400px;
+		left: 3%;
+		position: relative;
+		z-index: 0;
+		width: 70%;
+	}
+}
+
+.contenedorUsuarios h1{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 80px;	
+	top: -50px;
+	text-align: center;
+}
+
+.contenedorUsuarios h2{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 35px;	
+	top: -50px;
+	text-align: center;
+
+}
+
 
 

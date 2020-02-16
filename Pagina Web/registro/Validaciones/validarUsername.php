@@ -1,4 +1,7 @@
 <?php
+
+include_once '../indexRegistro.php';
+
 if (!empty($username)) {
 	
 	  
@@ -14,5 +17,6 @@ if (!empty($username)) {
 if(isset($missatgeUsername)) {
 	print($missatgeUsername) ;
 }
+
 
 ?>

@@ -1,26 +1,27 @@
 <?php
 class Usuaris {
-    private $bd;
-    private $usuari="root";
-    private $password="";
+    protected $bd;
+    protected $usuari="root";
+    protected $password="";
+
 
     function __construct() {
-     
+
+    		 
 	try {
-	    
-	    $this->bd = new PDO('mysql:host=localhost;dbname=secondhome', 
-                 $this->usuari, $this->password);  	   
+		
+		$this->bd = new PDO('mysql:host=localhost;dbname=secondhome', 
+				 $this->usuari, $this->password);  	   
 
 	} catch (PDOException $e) {
-	    print "Error: " . $e->getMessage() . "<br/>";
-	    die();
+		print "Error: " . $e->getMessage() . "<br/>";
+		die();
 	}
-
     }
 
   public function getUsername($username) {
 	$sql="select * from usuarios where username=:username";  
-        $ordre = $this->bd->prepare($sql);	 
+        $ordre = $this->bd->prepare($sql);
         $ordre->bindValue(':username',$username);  
         $ordre->execute();   
         $res = $ordre->fetch(PDO::FETCH_ASSOC);

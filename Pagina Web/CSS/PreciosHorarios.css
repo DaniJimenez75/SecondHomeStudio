@@ -46,7 +46,7 @@
     text-align: center;
     width: 892px; /* total computed width = 222 x 3 + 226 */
     right: 5%;
-    left: 3%;
+    left: 10%;
 }
 
 #pricing-table .plan {

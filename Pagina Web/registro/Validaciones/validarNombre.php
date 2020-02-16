@@ -1,4 +1,5 @@
 <?php
+include_once '../indexRegistro.php';
 if (!empty($nombre)) {
 
 	$numeroCaracteres = strlen($nombre);
