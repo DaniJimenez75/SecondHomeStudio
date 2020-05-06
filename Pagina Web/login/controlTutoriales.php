@@ -12,11 +12,6 @@ class Usuaris {
     }
 
 
-        if(isset($_GET['control'])){
-            $operacio = 'hiphopNormal';
-            if(strcmp($_GET['operacio'], $operacio)==0){
-                include_once 'Normal/Paginas/HipHopNormal.php';
-            }
-        }
+        
     
-}
+    }

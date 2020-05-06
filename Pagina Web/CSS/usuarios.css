@@ -11,7 +11,7 @@
 .titulo{
 	position: relative;
 	width: 60%;
-	left: 35%;
+	left: 28%;
 	top: -15px;
 	font-family: 'Bebas', cursive;
 	font-size:50px; 
@@ -29,6 +29,7 @@
 
 /*----------------------------------BARRA DE NAVEGACIÓN----------------------------------------------------*/
  .menuUsuarios{
+	
 	list-style-type: none;
 	padding: 1em 1em auto;
 	background: black;
@@ -43,49 +44,30 @@
 
 
 
-.menuUsuarios li{
-	position: relative;
-	padding: 20px 21px;
-	display:inline-block;
-	font-size: 15px;
-	background-color: black;
-	margin-right: 1px;
-
-}
-.menuUsuarios li a {
-
-    font-family: 'Amatic SC', cursive;
-	font-size:16px;
-	display: block;
-	color: #ffb200;
-	text-align: center;
-	padding: 10px 10px; 
-	text-decoration: none;
-	
-}
-
 @media screen and (max-width: 361px) { 
     .menuUsuarios {
 	list-style-type: none;
 	padding: 2px 2px 1px;
 	background: black;
 	position: absolute;
-	left: 15%;
-	width: 76%;
+	left: -25%;
+	width: 150%;
 	z-index: 100;
 	text-align: center;
-	top: 450px;
+	top: 90px;
 }
 	.titulo{
-		top: 70px;
+		top: -15px;
 		left: 15%;
 	}
 	.boton_login{
-		left: 25%;
+		top: 20px;
+		left: 15%;
 	}
 	#TITULOPAGINA{
 		left: -5%;
 		width: 100%;
+		top: 5px;
 	}
 }
 
@@ -95,22 +77,24 @@
 	padding: 2px 2px 1px;
 	background: black;
 	position: absolute;
-	left: 15%;
-	width: 76%;
+	left: -15%;
+	width: 120%;
 	z-index: 100;
 	text-align: center;
-	top: 500px;
+	top: 100px;
 }
 	.titulo{
-		top: 100px;
+		top: 5px;
 		left: 15%;
 	}
 	.boton_login{
+		top: 20px;
 		left: 25%;
 	}
 	#TITULOPAGINA{
 		left: -5%;
 		width: 100%;
+		top: 10px;
 	}
 }
 
@@ -120,21 +104,23 @@
 	padding: 2px 2px 1px;
 	background: black;
 	position: absolute;
-	left: 15%;
-	width: 76%;
+	left: -37%;
+	width: 150%;
 	z-index: 100;
 	text-align: center;
-	top: 480px;
+	top: 100px;
 }
 	.titulo{
-	top: 70px;
+	top: 5px;
 	left: 25%;
 	}
 	.boton_login{
+		top: 20px;
 		left: 35%;
 	}
 	#TITULOPAGINA{
-		left: 5%;
+		top: 10px;
+		left: 0;
 		width: 100%;
 	}
 }
@@ -145,22 +131,25 @@
 	padding: 2px 2px 1px;
 	background: black;
 	position: absolute;
-	left: 15%;
-	width: 76%;
+	left: -7%;
+	width: 90%;
 	z-index: 100;
 	text-align: center;
-	top: 450px;
+	top: 50px;
 }
 	.titulo{
-	top: 70px;
-	left: 25%;
+	top: -15px;
+	left: 10%;
+	width: 100%;
 	}
 	.boton_login{
 		left: 45%;
+		top: 20px;
 	}
 	#TITULOPAGINA{
 		left: 10%;
 		width: 76%;
+		top: 10px;
 	}
 }
 
@@ -170,11 +159,11 @@
 	padding: 2px 2px 1px;
 	background: black;
 	position: absolute;
-	left: 15%;
-	width: 76%;
+	left: -25%;
+	width: 120%;
 	z-index: 100;
 	text-align: center;
-	top: 350px;
+	top: 50px;
 }
 	.titulo{
 	top: -50px;
@@ -185,30 +174,30 @@
 		left: 55%;
 	}
 	#TITULOPAGINA{
-		left: 15%;
-		width: 76%;
+		left: 0;
+		width: 100%;
 	}
 }
 
 @media screen and (min-width: 834px) and (max-width: 1056px) { 
     .menuUsuarios {
-	list-style-type: none;
-	padding: 2px 2px 1px;
-	background: black;
-	position: absolute;
-	left: 15%;
-	width: 76%;
-	z-index: 100;
-	text-align: center;
-	top: 250px;
-}
+		list-style-type: none;
+		padding: 2px 2px 1px;
+		background: black;
+		position: absolute;
+		left: -35%;
+		width: 120%;
+		z-index: 100;
+		text-align: center;
+		top: 50px;
+	}
 	.titulo{
 	top: -50px;
-	left: 20%;
+	left: 30%;
 	width: 76%;
 	}
 	.boton_login{
-		left: 70%;
+		left: 65%;
 	}
 	#TITULOPAGINA{
 		left: 15%;
@@ -217,17 +206,17 @@
 }
 
 @media screen and (min-width: 1057px) and (max-width: 1370px) { 
-    .menuUsuarios {
-	list-style-type: none;
-	padding: 2px 2px 1px;
-	background: black;
-	position: absolute;
-	left: 15%;
-	width: 76%;
-	z-index: 100;
-	text-align: center;
-	top: 250px;
-}
+	.menuUsuarios {
+		list-style-type: none;
+		padding: 2px 2px 1px;
+		background: black;
+		position: absolute;
+		left: -35%;
+		width: 120%;
+		z-index: 100;
+		text-align: center;
+		top: 50px;
+	}
 	.titulo{
 	top: -50px;
 	left: 30%;
@@ -241,6 +230,33 @@
 		width: 76%;
 	}
 }
+
+@media screen and (min-width: 1371px) { 
+	.menuUsuarios {
+		list-style-type: none;
+		padding: 2px 2px 1px;
+		background: black;
+		position: absolute;
+		left: -30%;
+		width: 90%;
+		z-index: 100;
+		text-align: center;
+		top: 50px;
+	}
+	.titulo{
+	top: -50px;
+	left: 35%;
+	width: 76%;
+	}
+	.boton_login{
+		left: 70%;
+	}
+	#TITULOPAGINA{
+		left: 25%;
+		width: 76%;
+	}
+}
+
 
 .menuUsuarios li{
 	position: relative;
@@ -263,69 +279,184 @@
 	
 }
 
+
+.contenedorUsuarios{
+	top:200px;
+	position: relative;
+	z-index: 0;
+	width: 75%;
+	left:-25%;
+	
+}
+
+
+@media screen and (max-width: 576px) { 
+	.contenedorUsuarios{
+		top:400px;
+		left: 0;
+		position: relative;
+		z-index: 0;
+		width: 70%;
+	}
+}
+
+@media screen and (min-width:577px) and (max-width: 850px) { 
+	.contenedorUsuarios{
+		top:250px;
+		left: 5%;
+		position: relative;
+		z-index: 0;
+		width: 70%;
+	}
+}
+@media screen and (min-width:851px) and (max-width: 1350px) { 
+	.contenedorUsuarios{
+		top:200px;
+		left: -15%;
+		position: relative;
+		z-index: 0;
+		width: 70%;
+	}
+}
+
+.contenedorUsuarios h1{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 80px;	
+	top: -50px;
+	text-align: center;
+}
+
+.contenedorUsuarios h2{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 35px;	
+	top: -50px;
+	text-align: center;
+
+}
+
 .tablaVideos{
-    border:5px solid black;
-    position:relative;
-    width:100%;
+	position: relative;
+	border:3px solid black;
+	width: 100%;
+	left: -25%;
 }
 
-.videoTutoriales{
-    width:500px;
-    height:300px;
-
+.tablaVideos .videoTutoriales{
+	width: 500px;
+	height: 500px;
 }
 
-@media screen and (max-width: 400px) { 
-    .tablaVideos td{
 
-    position:relative;
-    width:100%;
-}
-.videoTutoriales{
-    width:150px;
-    height:150px;
+@media screen and (max-width: 510px) { 
 
-}
+	.tablaVideos{
+		position: relative;
+		border:3px solid black;
+		width: 100%;
+		left: -35%;
 
-}
-
-@media screen and (min-width:400px) and (max-width: 700px) { 
-    .tablaVideos td{
-
-    position:relative;
-    width:100%;
-}
-.videoTutoriales{
-    width:200px;
-    height:150px;
-
+	}
+	
+	.tablaVideos .videoTutoriales{
+		width: 155px;
+		height: 200px;
+	}
 }
 
+
+@media screen and (min-width:502px) and (max-width: 700px) { 
+
+	.tablaVideos{
+		position: relative;
+		border:3px solid black;
+		width: 100%;
+		left: -10%;
+
+	}
+	
+	.tablaVideos .videoTutoriales{
+		width: 220px;
+		height: 180px;
+	}
 }
 
-@media screen and (min-width:701px) and (max-width: 950px) { 
-    .tablaVideos td{
+@media screen and (min-width:701px) and (max-width: 880px) { 
 
-    position:relative;
-    width:100%;
-}
-.videoTutoriales{
-    width:300px;
-    height:200px;
+	.tablaVideos{
+		position: relative;
+		border:3px solid black;
+		width: 100%;
+		left: -30%;
 
-}
-
-}
-@media screen and (min-width:951px) and (max-width: 1200px) { 
-    .tablaVideos td{
-
-    position:relative;
-    width:100%;
-}
-.videoTutoriales{
-    width:400px;
-    height:300px;
-
+	}
+	
+	.tablaVideos .videoTutoriales{
+		width: 300px;
+		height: 220px;
+	}
 }
 
+@media screen and (min-width:881px) and (max-width: 1164px) { 
+
+	.tablaVideos{
+		position: relative;
+		border:3px solid black;
+		width: 100%;
+		left: -10%;
+
+	}
+	
+	.tablaVideos .videoTutoriales{
+		width: 350px;
+		height: 250px;
+	}
 }
+
+@media screen and (min-width:1164px) and (max-width: 1550px) { 
+
+	.tablaVideos{
+		position: relative;
+		border:3px solid black;
+		width: 100%;
+		left: -8%;
+
+	}
+	
+	.tablaVideos .videoTutoriales{
+		width: 450px;
+		height: 300px;
+	}
+}
+
+@media screen and (min-width:1550px) { 
+
+	.tablaVideos{
+		position: relative;
+		border:3px solid black;
+		width: 100%;
+		left: -6%;
+
+	}
+	
+	.tablaVideos .videoTutoriales{
+		width: 600px;
+		height: 370px;
+
+	}
+}
+
+.textoAyuda{
+	font-size: 20px;
+	text-align: center;
+	color:red;
+}
+
+.tituloTutorial{
+	font-size: 25px;
+	text-align: center;
+}
+
+
+

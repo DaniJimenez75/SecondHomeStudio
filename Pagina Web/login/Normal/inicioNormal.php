@@ -30,7 +30,7 @@ include_once '../seguretat.php';
 
 <body>
 <h1 class="titulo">Bienvenido <?php  echo $_SESSION['username'];  ?> 
-<input type="button"  class="boton_personalizado" value="?" onclick="ajuda()"> </h1>
+	
 	<header>
 	<nav>
 		<ul class = "menuUsuarios">
@@ -47,7 +47,7 @@ include_once '../seguretat.php';
 		echo "<li><a href='inicioNormal.php?pagina=waackingNormal'>
 					WAACKING & VOGUE</a></li>";
 		echo "<li><a href='inicioNormal.php?pagina=houseNormal'>
-					HOUSE & SHUFFLE</a></li>";
+					HOUSE & SHUFFLE</a></li></ul>";
 					 
 					 
 					 ?>
@@ -57,20 +57,6 @@ include_once '../seguretat.php';
 </header>
 
 
-	
-<div class="nou" id="ayuda">
-<H2>Premium</H2>
-Aqui encontraras unos videos de corta duracion de las clases, para ver el video completo tendras que hacerte premium y podras ver todas las clases y sus videos completos. Si quieres ser premium haz click aqui
-</div>	
-
-<script type="text/javascript">
-	function ajuda(){
-		if(document.getElementById('ayuda').style.display=="block")
-			document.getElementById('ayuda').style.display="none"
-		else
-			document.getElementById('ayuda').style.display="block"
-	}
-</script>
 
 
 <?php

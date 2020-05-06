@@ -6,13 +6,38 @@
 	position: relative;
 	width: 100%;
 }
+@media screen and (max-width: 576px) {
+	.contenedorRegistro{
+		top: 80px;
+		left: 5%;
+	}
+}
 
+.contenedorRegistro #tituloLogin{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 80px;
+	left: 35%;
+}
+@media screen and (max-width: 576px) {
+	.contenedorRegistro #tituloLogin{
+		top: 20px;
+		left: 30%;
+	}
+}
 .contenedorRegistro #tituloRegistro{
 	position: relative;
 	font-family:BigShouldersDisplay;
 	font-size: 80px;
 	left: 35%;
 }
+@media screen and (max-width: 576px) {
+	.contenedorRegistro #tituloRegistro{
+		top: 20px;
+		left: 20%;
+	}
+}
+
 
 .contenedorRegistro #titulo2{
 	position: relative;
@@ -28,6 +53,8 @@
 	font-size: 65px;
 	left: 25%;
 }
+
+
 .formulario{
 	position: relative;
 	left: 15%;
@@ -37,10 +64,23 @@
 	padding: 30px;
 }
 
+
 span{
 		font-family:Orbitron-Regular;
 		font-size: 20px;
 
+}
+@media screen and (max-width: 576px) {
+	span{
+		font-family:Orbitron-Regular;
+		font-size: 15px;
+
+
+}
+
+}
+input{
+	border: 2px solid #7d0085;
 }
 
 #boton{
@@ -55,6 +95,8 @@ span{
     border: 2px solid #7d0085;
     left: 25%;
 }
+
+
 #botonVolver{
 	position: relative;
 	text-decoration: none;
@@ -67,7 +109,28 @@ span{
     border: 2px solid #7d0085;
     left: 25%;
 }
+@media screen and (max-width: 576px) {
+	#boton{
+		left: 5%;
+		font-size: 16px;
 
-input{
-	border: 2px solid #7d0085;
+	}
+	#botonVolver{
+		left: 5%;
+		font-size: 16px;
+
+	}
 }
+@media screen and (max-width: 870px) {
+	#boton{
+		left: 5%;
+		font-size: 16px;
+
+	}
+	#botonVolver{
+		left: 5%;
+		font-size: 16px;
+
+	}
+}
+

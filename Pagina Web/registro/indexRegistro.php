@@ -1,6 +1,7 @@
 <?php
 	include_once 'Usuaris.php';
-	error_reporting(E_ALL);
+	error_reporting(0);
+
  	ini_set('display_errors', 1);
 
 		$missatgeUsername ="";
@@ -20,8 +21,10 @@
 			$resUsername = $usuaris->getUsername($username);
 			$resTelefono = $usuaris->getTelefono($telefono);
 			$resCorreo = $usuaris->getCorreo($correo);
-			if(!$resUsername && !$resTelefono && !$resCorreo) {
+			if(!$resUsername && !$resTelefono && !$resCorreo && !$error) {
+				
 				$res = $usuaris->afegir($username,$nombre,$apellidos,$telefono,$correo,$password);
+				
 
 			} 
 			if($resUsername) {

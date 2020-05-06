@@ -48,6 +48,17 @@
     right: 5%;
     left: 10%;
 }
+@media screen and (min-width:700px) and (max-width: 840px) { 
+    #pricing-table {
+        position: relative;
+        margin: 100px auto;
+        text-align: center;
+        width: 100%; /* total computed width = 222 x 3 + 226 */
+        right: 0;
+        left: 1%;
+       
+    }
+}
 
 #pricing-table .plan {
     font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
@@ -70,14 +81,7 @@
         
     }
 }
-@media screen and (min-width: 768px) { 
-    #pricing-table .plan {  
-        position: relative;
-        float:left;
-        width: 200px;
-        left:-5%;
-    }
-}
+
 
 
 #pricing-table #most-popular {
@@ -194,6 +198,60 @@
   zoom:1
 }    
 
+
+
+/* ---------------------------------------HORARIO--------------------------------------*/
+
+.tablaVideos td #videoHorario{
+    border:5px solid black;
+    position:relative;
+    width:100%;
+}
+
+
+
+@media screen and (max-width: 400px) { 
+    .tablaVideos td #videoHorario{
+
+    position:relative;
+    width:150px;
+    height: 150px;
+}
+
+
+}
+
+@media screen and (min-width:400px) and (max-width: 550px) { 
+    .tablaVideos td #videoHorario{
+        left: 50px;
+    position:relative;
+    width:100%;
+}
+
+
+}
+
+@media screen and (min-width:550px) and (max-width: 950px) { 
+    .tablaVideos td #videoHorario{
+
+    position:relative;
+    width:250px;
+    height: 250px;
+}
+
+
+}
+@media screen and (min-width:951px) and (max-width: 1200px) { 
+    .tablaVideos td #videoHorario{
+  
+    position:relative;
+    right: 20px;
+    width:450px;
+    height: 450px;
+}
+
+
+}
 
 
 

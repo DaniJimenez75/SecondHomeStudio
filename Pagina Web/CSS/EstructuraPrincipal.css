@@ -1,7 +1,7 @@
 /*Estructura principal */
 
 body{
-	background: #FF8000;
+	background: rgb(248, 140, 31);
 	width: 100%;
 
 }
@@ -296,6 +296,24 @@ header nav li a {
 		border: white 3px solid;
 
 }
+@media screen and (max-width: 576px) { 
+	.submenuclases{
+		font-size:10px;
+		width: 300px;
+		left: -120px;
+	
+	}
+	
+}
+@media screen and (min-width:577px) and (max-width: 900px) { 
+	.submenuclases{
+		width: 400px;
+		left: -35%;
+		
+
+	
+	}
+}
 
 .submenuclases li{
 	background-color: black;
@@ -315,6 +333,12 @@ header nav li a {
 
 
 }
+@media screen and (max-width: 576px) { 
+
+.submenuclases li a{
+	font-size: 15px;
+}
+}
 
 .menu li:target .submenuclases,
 .menu li:hover .submenuclases{
@@ -324,51 +348,9 @@ header nav li a {
 
 }
 
-@media screen and (max-width: 576px) { 
-	.submenuclases{
-		position: absolute;
-		background-color: black;
-		width: 300px;
-		visibility: hidden;
-		opacity: 0;
-		transition: opacity 1.5s;
-		padding: 1em 0em auto 1em;		
-		top: 90%;
-			border: white 3px solid;
-	
-	}
-}
-@media screen and (max-width: 748px) { 
-	.submenuclases{
-		position: absolute;
-		background-color: black;
-		width: 400px;
-		visibility: hidden;
-		opacity: 0;
-		transition: opacity 1.5s;
-		padding: 1em 0em auto 1em;
-		left: -35%;
-		top: 90%;
-			border: white 3px solid;
-	
-	}
-}
 
-@media screen and (max-width: 900px) { 
-	.submenuclases{
-		position: absolute;
-		background-color: black;
-		width: 400px;
-		visibility: hidden;
-		opacity: 0;
-		transition: opacity 1.5s;
-		padding: 1em 0em auto 1em;
-	
-		top: 90%;
-			border: white 3px solid;
-	
-	}
-}
+
+
 
 
 
@@ -441,13 +423,7 @@ header nav li a {
 	}
 }
 
-.contenedorUsuarios{
-	top:100px;
-	left: 70px;
-	position: relative;
-	z-index: 0;
-	width: 100%;
-}
+
 
 /* TITULO DE LA PAGINA "QUE ES SECOND HOME STUDIO?" */
 .contenedor h1{
@@ -495,6 +471,13 @@ header nav li a {
 	left: 35%;
 }
 
+.contenedor #instalaciones{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 80px;
+	left: 35%;
+}
+
 .contenedor #clase{
 	position: relative;
 	font-family:BigShouldersDisplay;
@@ -503,6 +486,20 @@ header nav li a {
 	top: -50px;
 	text-align: center;
 }
+.contenedor #contactaConNosotros{
+	position: relative;
+	font-family:BigShouldersDisplay;
+	font-size: 80px;
+	
+	top: -50px;
+	text-align: center;
+}
+@media screen and (max-width: 576px) { 
+	.contenedor #contactaConNosotros{
+		left:15%;
+		top:10%;
+	}
+}
 
 @media screen and (max-width: 576px) { 
 	.contenedor #clase{
@@ -510,13 +507,7 @@ header nav li a {
 	left: 16%;
 	}
 }
-.contenedorUsuarios #usuarios{
-	position: relative;
-	font-family:BigShouldersDisplay;
-	font-size: 65px;
-	left: 25%;
-	top: 30px;
-}
+
 
 
 .contenedor p{
@@ -540,41 +531,70 @@ header nav li a {
 		left: 13%;
 	}
 }
-
-.contenedorUsuarios{
-	top:200px;
-	left: 10%;
+.imagenes{
 	position: relative;
-	z-index: 0;
-	width: 75%;
-	
+	width: 500px;
+	left:25%;
+}
+
+
+
+#web{
+	position: relative;
+	float: left;
+
+	width: 100px;
+}
+
+
+#cc{
+	position: relative;
+	float: left;
+	left: 20px;
+	top: 20px;
+
+
+	width: 100px;
+}
+
+
+#dinahosting{
+	position: relative;
+	float: left;
+	width: 100px;
+	top: 20px;
+	left: 40px;
 }
 @media screen and (max-width: 576px) { 
-	.contenedorUsuarios{
-		top:400px;
-		left: 3%;
+	.imagenes{
 		position: relative;
-		z-index: 0;
-		width: 70%;
+		width: 500px;
+		left:1%;
 	}
-}
-
-.contenedorUsuarios h1{
+	#web{
+		position: relative;
+		float: left;
+		
+		width: 50px;
+	}
+	
+#cc{
 	position: relative;
-	font-family:BigShouldersDisplay;
-	font-size: 80px;	
-	top: -50px;
-	text-align: center;
+	float: left;
+	left: 100px;
+	top: 20px;
+
+
+	width: 50px;
 }
 
-.contenedorUsuarios h2{
+
+#dinahosting{
 	position: relative;
-	font-family:BigShouldersDisplay;
-	font-size: 35px;	
-	top: -50px;
-	text-align: center;
-
+	float: left;
+	width: 50px;
+	top: 20px;
+	left: 120px;
 }
 
-
-
+}

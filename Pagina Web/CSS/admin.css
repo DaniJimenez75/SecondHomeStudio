@@ -5,8 +5,51 @@
     left: 15%;
 }
 
+
 .tablaUsuarios td{
     border: black 1px solid;
     font-size:17px;
  
+}
+@media screen and (max-width: 576px) {
+    .tablaUsuarios{
+        position: relative;
+        border: black 2px solid;
+        width: 1%;
+        left: -5%;
+    }
+    .tablaUsuarios td{
+        border: black 1px solid;
+        font-size:10px;
+     
+    }
+}
+
+#titulos{
+    position: relative;
+	width: 80%;
+	left: 15%;
+	font-family: 'Bebas', cursive;
+	font-size:30px; 
+	
+}
+#tituloAdmin{
+    position: relative;
+	width: 60%;
+	left: 25%;
+	top: -15px;
+	font-family: 'Bebas', cursive;
+	font-size:60px; 
+
+}
+@media screen and (max-width: 576px) {
+    #tituloAdmin{
+        position: relative;
+        width: 60%;
+        left: 6%;
+        top: -15px;
+        font-family: 'Bebas', cursive;
+        font-size:50px; 
+    
+    }
 }

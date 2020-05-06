@@ -17,6 +17,8 @@ $password=$_POST['password'];
 <head>  
 
   <h1 id="TITULOPAGINA">SECOND HOME STUDIO</h1>
+  <img class = "imagensecond" src="../../Imagenes/logoo.png">
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"> 
   <link rel="stylesheet" type="text/css" href="../../CSS/EstructuraPrincipal.css">
@@ -30,9 +32,9 @@ $password=$_POST['password'];
   <title>SECOND HOME STUDIO</title>
 </head>
 <div class = "contenedorRegistro">
-<h1 id="tituloBienvenida">Bienvenido <?php  echo $_SESSION['username'];  ?></h1>
+<h1 id="tituloAdmin">Bienvenido <?php  echo $_SESSION['username'];  ?></h1>
 
-<h2 id = "titulo2">Cambiar datos de usuario</h2>
+<h2 id = "titulos">Cambiar datos de usuario</h2>
 <div class = "formulario">
 <form action="admin.php" method ="POST">
   <h2>Introduce usuario del que quieres cambiar datos</h2>
@@ -111,7 +113,7 @@ $password=$_POST['password'];
 
 </form>
 </div>
-<h2 id = "titulo2">Convertir Usuario a Premium</h2>
+<h2 id = "titulos">Convertir Usuario a Premium</h2>
 <div class = "formulario">
 <form action="admin.php" method ="POST">
   <h2>Introduce usuario que quieres que se convierta en Premium</h2>
@@ -125,7 +127,7 @@ $password=$_POST['password'];
   <br>
 </form>
 </div>
-<h2 id = "titulo2">Convertir Usuario a Normal</h2>
+<h2 id = "titulos">Convertir Usuario a Normal</h2>
 <div class = "formulario">
 <form action="admin.php" method ="POST">
   <h2>Introduce usuario que quieres que se convierta en Normal</h2>
@@ -139,7 +141,7 @@ $password=$_POST['password'];
   <br>
 </form>
 </div>
-<h2 id = "titulo2">Eliminar Usuario</h2>
+<h2 id = "titulos">Eliminar Usuario</h2>
 <div class = "formulario">
 <form action="" method ="POST">
   <h2>Introduce usuario que quieres eliminar</h2>
@@ -155,16 +157,14 @@ $password=$_POST['password'];
 </div>  
 <br>
   <br>
-  <h2 id = "titulo2">Lista Usuarios</h2>
+  <h2 id = "titulos">Lista Usuarios</h2>
   <table class="tablaUsuarios">
 	  <tr>
-		  <td><b>Codigo</b></td>
 		  <td><b>Username</b></td>
 		  <td><b>Nombre</b></td>
 		  <td><b>Apellidos</b></td>
 		  <td><b>Telefono</b></td>
 		  <td><b>Correo</b></td>
-		  <td><b>Password</b></td>
 		  <td><b>Premium</b></td>
 	
   <?php 
@@ -176,13 +176,11 @@ foreach($resTodo as $usuarios){
 	
 	<?php
 	echo "<tr>"; 
-		echo "<td>".$usuarios['codi']."</td>";
 		echo "<td>".$usuarios['username']."</td>";
 		echo "<td>".$usuarios['nombre']."</td>";
 		echo "<td>".$usuarios['apellidos']."</td>";
 		echo "<td>".$usuarios['telefono']."</td>";
 		echo "<td>".$usuarios['correo']."</td>";
-		echo "<td>".$usuarios['password']."</td>";
 		echo "<td>".$usuarios['premium']."</td>";
 		echo "</tr>"; 
 		

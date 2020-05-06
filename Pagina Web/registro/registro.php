@@ -101,7 +101,7 @@ $error = false;
 <br>
 <br>
 <input type="submit" value="Registrarse" name="boton" id="boton">
-<input type="button" value="Volver a la pagina" name="boton" id="botonVolver" onclick="location.href='../QueEsSecondHome.html'">
+<input type="button" value="Volver a la pagina" name="boton" id="botonVolver" onclick="location.href='../QueEsSecondHome.php'">
 	</form>
 </div>
 </div>

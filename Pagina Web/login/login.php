@@ -23,7 +23,7 @@
 
 <body>
 <div class = "contenedorRegistro">
-<h1 id = "tituloRegistro">LOGIN</h1>
+<h1 id = "tituloLogin">LOGIN</h1>
 <div class = "formulario">
 <form action="processaLogin.php" method ="POST">
   <span>USERNAME:          </span><input type="text" name="username">
@@ -33,7 +33,7 @@
   <br>
   <br>
   <input type="submit" value="Login" name="boton" id="boton">
-  <input type="button" value="Volver a la pagina" name="boton" id="botonVolver" onclick="location.href='../QueEsSecondHome.html'">
+  <input type="button" value="Volver a la pagina" name="boton" id="botonVolver" onclick="location.href='../QueEsSecondHome.php'">
 
 
   </form>
