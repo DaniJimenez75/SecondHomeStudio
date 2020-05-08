@@ -6,6 +6,7 @@ body{
 
 }
 
+/*Foto pantalla inicio */
 #fotoTodos{
 	width:80%;
 }
@@ -16,6 +17,7 @@ body{
 }
 }
 
+/* Boton para logear */
   .boton_login{
 	  position: relative;
 	  
@@ -55,7 +57,7 @@ body{
 	
 }
 
-
+/* Logo Second Home Studio */
 .imagensecond{
 	position: absolute;
 	  width: 150px;
@@ -432,6 +434,8 @@ header nav li a {
 	font-size: 55px;
 
 }
+
+/* CONTENEDORES DE CADA UNA DE LAS PAGINAS */
 @media screen and (max-width: 576px) { 
 .contenedor #QueEsSecondHome {
 	position: relative;
@@ -486,6 +490,12 @@ header nav li a {
 	top: -50px;
 	text-align: center;
 }
+@media screen and (max-width: 576px) { 
+	.contenedor #clase{
+	top:0px;
+	left: 16%;
+	}
+}
 .contenedor #contactaConNosotros{
 	position: relative;
 	font-family:BigShouldersDisplay;
@@ -500,14 +510,6 @@ header nav li a {
 		top:10%;
 	}
 }
-
-@media screen and (max-width: 576px) { 
-	.contenedor #clase{
-	top:0px;
-	left: 16%;
-	}
-}
-
 
 
 .contenedor p{
@@ -524,20 +526,10 @@ header nav li a {
 	}
 }
 	
-@media screen and (max-width: 576px) { 
-	.contenedor img{
-		position: relative;
-		width: 100%;
-		left: 13%;
-	}
-}
-.imagenes{
-	position: relative;
-	width: 500px;
-	left:25%;
-}
 
 
+
+/* IMAGENES DINAHOSTING */
 
 #web{
 	position: relative;

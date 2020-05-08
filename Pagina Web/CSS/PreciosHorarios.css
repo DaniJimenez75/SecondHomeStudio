@@ -40,6 +40,7 @@
         }
         }
 
+        /* TABLA PRECIOS */
 #pricing-table {
 	position: relative;
     margin: 100px auto;
@@ -103,6 +104,7 @@
 
 /* --------------- */   
 
+/*TITULO TABLA PRECIOS*/
 #pricing-table h3 {
     font-size: 20px;
     font-weight: normal;
@@ -202,6 +204,8 @@
 
 /* ---------------------------------------HORARIO--------------------------------------*/
 
+
+/* TABLA VIDEOS */
 .tablaVideos td #videoHorario{
     border:5px solid black;
     position:relative;

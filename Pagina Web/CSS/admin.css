@@ -1,3 +1,7 @@
+/*--------------PAGINA ADMINISTRADOR--------------------------*/
+
+/* LISTA DE LOS USUARIOS REGISTRADOS EN LA PAGINA */
+
 .tablaUsuarios{
     position: relative;
     border: black 2px solid;
@@ -24,7 +28,7 @@
      
     }
 }
-
+/* TITULO SECOND HOME */
 #titulos{
     position: relative;
 	width: 80%;
@@ -33,6 +37,8 @@
 	font-size:30px; 
 	
 }
+
+/*TITULO ADMINISTRADOR */
 #tituloAdmin{
     position: relative;
 	width: 60%;

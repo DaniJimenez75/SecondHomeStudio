@@ -41,6 +41,9 @@
 </div>
 </body>
 <?php
+
+
+/* SI HAY ALGUN ERROR AL INICIAR SESIÓN*/
  if(isset($_GET["error"])) {
     $error=$_GET["error"]; 
     switch($error) {

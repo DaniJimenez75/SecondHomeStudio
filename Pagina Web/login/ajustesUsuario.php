@@ -50,9 +50,10 @@ $password=$_POST['password'];
   <br>
   <br>
   <?php
+  /* CAMBIAR USERNAME */
 include_once '../registro/Validaciones/validarUsername.php';
   if($_POST['cambiarusername'] && !$error) {	
-    
+    /* SI COINCIDEN LOS 2 CAMPOS */
     if(strcmp($_POST['username'], $_POST['usernameConfirmar'])==0){
         $usuaris->actualizarUsername($usuaris);
         $_SESSION['username'] = $_POST['username'];
@@ -83,9 +84,12 @@ include_once '../registro/Validaciones/validarUsername.php';
   <br>
   <input type="submit" value="Cambiar Telefono" name="cambiartelefono" id="boton">
   <?php
+   /* CAMBIAR TELEFONO */
 include_once '../registro/Validaciones/validarTelefono.php';
+
   if($_POST['cambiartelefono'] && !$error) {	
-    
+        /* SI COINCIDEN LOS 2 CAMPOS */
+
     if(strcmp($_POST['telefono'], $_POST['telefonoConfirmar'])==0){
         $usuaris->actualizarTelefono($usuaris);     
         header('Location: ajustesUsuario.php');
@@ -115,9 +119,11 @@ include_once '../registro/Validaciones/validarTelefono.php';
   <br>
   <input type="submit" value="Cambiar Correo" name="cambiarcorreo" id="boton">
   <?php
+  /*CAMBIAR CORREO */
 include_once '../registro/Validaciones/validarCorreo.php';
   if($_POST['cambiarcorreo'] && !$error) {	
     
+     /* SI COINCIDEN LOS 2 CAMPOS */
     if(strcmp($_POST['correo'], $_POST['correoConfirmar'])==0){
         $usuaris->actualizarCorreo($usuaris);     
         header('Location: ajustesUsuario.php');
@@ -150,9 +156,10 @@ include_once '../registro/Validaciones/validarCorreo.php';
   <input type="submit" value="Cambiar Contraseña" name="cambiarcontraseña" id="boton">
   <?php
   include_once '../registro/Validaciones/validarContraseña.php';
-
+  /* CAMBIAR CONTRASEÑA */
   if($_POST['cambiarcontraseña'] && !$error) {	
     
+     /* SI COINCIDEN LOS 2 CAMPOS */
     if(strcmp($_POST['password'], $_POST['passwordConfirmar'])==0){
         $usuaris->actualizarContraseña($usuaris);     
         header('Location: ajustesUsuario.php');

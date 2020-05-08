@@ -18,7 +18,7 @@ class Usuaris {
 		die();
 	}
     }
-
+    /* OBTENEMOS USERNAME */
   public function getUsername($username) {
 	$sql="select * from usuarios where username=:username";  
         $ordre = $this->bd->prepare($sql);
@@ -28,15 +28,8 @@ class Usuaris {
 	
         return $res;
    }
-   public function getAll() {
-	$sql="select * from usuarios";  
-        $ordre = $this->bd->prepare($sql);	 
-        $ordre->execute();   
-        $res = $ordre->fetchAll(PDO::FETCH_ASSOC);
-	
-        return $res;
-   }
 
+       /* OBTENEMOS PASSWORD */
    public function getPassword($username) {
 	$sql="select password from usuarios where username=:username";  
         $ordre = $this->bd->prepare($sql);	 
@@ -46,6 +39,8 @@ class Usuaris {
 	
         return $res;
    }
+       /* OBTENEMOS TELEFONO */
+
    public function getTelefono($telefono) {
 	$sql="select * from usuarios where telefono=:telefono";  
         $ordre = $this->bd->prepare($sql);	 
@@ -55,6 +50,8 @@ class Usuaris {
 	
         return $res;
    }
+       /* OBTENEMOS CORREO */
+
    public function getCorreo($correo) {
 	$sql="select * from usuarios where correo=:correo";  
         $ordre = $this->bd->prepare($sql);	 
@@ -65,8 +62,20 @@ class Usuaris {
         return $res;
    }
 
+          /* OBTENEMOS TODO */
+
+    public function getAll() {
+     $sql="select * from usuarios";  
+     $ordre = $this->bd->prepare($sql);	 
+     $ordre->execute();   
+     $res = $ordre->fetchAll(PDO::FETCH_ASSOC);
+            
+    return $res;
+    
+    }
 
 
+/* AGREGAR USUARIOS */
     public function afegir($username,$nombre,$apellidos,$telefono,$correo,$password) {
  	$sql ="insert into usuarios(username,nombre,apellidos,telefono,correo,password) values 
 			 (:username,:nombre,:apellidos,:telefono,:correo,:password)";
@@ -82,6 +91,7 @@ class Usuaris {
 
     }
 
+/* CONSULTA ACTUALIZAR USUARIOS */
     public function actualitzar($usernameNuevo,$username,$nombre,$apellidos,$telefono,$correo,$password) {
 		$sql ="update usuarios set username=:usernameNuevo,nombre=:nombre, apellidos=:apellidos, telefono=:telefono, correo=:correo, password=:password 
 				 where username=:username";
@@ -99,6 +109,7 @@ class Usuaris {
         return $res;
 
     }
+    /*  ACTUALIZAR USUARIO */
 
     function update($usuaris) {  
         global $missatge;     
@@ -115,6 +126,7 @@ class Usuaris {
       
         }
 
+       /* CONSULTA PARA CAMBIAR EL PREMIUM DEL USUARIO */
     public function cambiarPremium($premium,$username) {
 		$sql ="update usuarios set premium=:premium where username=:username";
 		$ordre = $this->bd->prepare($sql);	 
@@ -129,8 +141,8 @@ class Usuaris {
     }
 
     
-
-        
+    /* CAMBIAR USUARIO A PREMIUM */         
+   
   function cambiarAPremium($usuaris) {  
 	global $missatge;     	
 	$username=$_POST['username'];
@@ -142,7 +154,7 @@ class Usuaris {
 	}
 	
 
-
+    /* CAMBIAR USUARIO A NO PREMIUM */  
 	  function cambiarANormal($usuaris) {  
 		global $missatge;     	
 		$username=$_POST['username'];	
@@ -153,7 +165,7 @@ class Usuaris {
 	  
         }
         
-
+ /* BORRAR USUARIO */
 public function borrar($username) {
 	$sql ="delete from usuarios where username=:username";
 		$ordre = $this->bd->prepare($sql);	 
@@ -162,6 +174,7 @@ public function borrar($username) {
 		return $res;
    }
 
+   /* CONSULTA PARA CAMBIAR USERNAME */
    public function setUsername($username,$usernameAntiguo){
     $sql ="update usuarios set username=:username where username=:usernameAntiguo";
     $ordre = $this->bd->prepare($sql);	    
@@ -171,6 +184,7 @@ public function borrar($username) {
     return $res;
    }
 
+   /* CAMBIAR USERNAME */
    public function actualizarUsername($usuaris){
        $username = $_POST['username'];
        $usernameAntiguo = $_SESSION['username'];
@@ -178,6 +192,7 @@ public function borrar($username) {
 
    }
 
+   /* CONSULTA PARA CAMBIAR TELEFONO */
    public function setTelefono($telefono,$username){
     $sql ="update usuarios set telefono=:telefono where username=:username";
     $ordre = $this->bd->prepare($sql);	    
@@ -187,6 +202,7 @@ public function borrar($username) {
     return $res;
    }
 
+   /* ACTUALIZAR TELEFONO */
    public function actualizarTelefono($usuaris){
        $username = $_SESSION['username'];
        $telefono = $_POST['telefono'];
@@ -194,6 +210,7 @@ public function borrar($username) {
 
    }
 
+   /* CONSULTA PARA CAMBIAR EL CORREO */
    public function setCorreo($correo,$username){
     $sql ="update usuarios set correo=:correo where username=:username";
     $ordre = $this->bd->prepare($sql);	    
@@ -203,6 +220,7 @@ public function borrar($username) {
     return $res;
    }
 
+    /* ACTUALIZAR CORREO */
    public function actualizarCorreo($usuaris){
        $username = $_SESSION['username'];
        $correo = $_POST['correo'];
@@ -210,6 +228,7 @@ public function borrar($username) {
 
    }
 
+    /* CONSULTA CAMBIAR CONTRASEÑA */
    public function setContraseña($password,$username){
     $sql ="update usuarios set password=:password where username=:username";
     $ordre = $this->bd->prepare($sql);	    
@@ -218,6 +237,7 @@ public function borrar($username) {
     $res = $ordre->execute(); 
     return $res;
    }
+    /* ACTUALIZAR CONTRASEÑA */
 
    public function actualizarContraseña($usuaris){
        $username = $_SESSION['username'];
